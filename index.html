@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html ng-app="" lang="en-US">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,23 +46,23 @@
 			  <tbody>
 			    <tr>
 			      <td>1</td>
-			      <td>Column content</td>
+			      <td><a href="" ng-click="showReusable=true; showPaper=false">Reusable Goods</a></td> <!--information that will display in the central window-->
 			    </tr>
 			    <tr>
 			      <td>2</td>
-			      <td>Column content</td>
+			      <td><a href="" ng-click="showPaper=true; showReusable=false">Paper</a></td>
 			    </tr>
 			    <tr class="info">
 			      <td>3</td>
-			      <td>Column content</td>
+			      <td>Metals</td>
 			    </tr>
 			    <tr class="success">
 			      <td>4</td>
-			      <td>Column content</td>
+			      <td>Glass</td>
 			    </tr>
 			    <tr class="danger">
 			      <td>5</td>
-			      <td>Column content</td>
+			      <td>Textiles</td>
 			    </tr>
 			  </tbody>
 			</table> 
@@ -132,12 +132,18 @@
 		</div>
 	</div>
 	<div class="container well well-sm">
-		<div class="panel panel-primary col-md-10">
+		<div class="panel panel-primary col-md-12">
 		  <div class="panel-heading">
-		    <h3 class="panel-title">Items</h3>
+		    <h3 class="panel-title">Information</h3>
 		  </div>
 		  <div class="panel-body">
-		    <img src="">
+		    <div ng-show="showReusable">
+				<p>Reusable goods, including intact or repairable home or industrial appliances; household goods; clothing; intact materials in demolition debris, such as lumber; building materials such as doors, windows, cabinets, and sinks; business supplies and equipment; lighting fixtures; and any manufactured item or naturally occurring object that can be repaired or used again as is.</p>
+			</div>
+			<div ng-show="showPaper">
+			<p>Paper, including newsprint; ledger paper; computer paper; corrugated cardboard; and mixed paper.</p>
+			</div>
+			
 		  </div>
 		</div>
 	</div>	
