@@ -46,24 +46,19 @@
 		    <table class="table table-striped table-hover ">
 			  <tbody>
 			    <tr>
-			      <td>1</td>
-			      <td><a href="" ng-click="showReusable=true; showPaper=false; showMetals=false; showTextiles=false; showGlass=false;">Reusable Goods</a></td> <!--information that will display in the central window-->
+			      <td><a href="" ng-click="showReusable=true; showPaper=false; showMetals=false; showTextiles=false; showGlass=false;showPet=false;showHDPE=false;showPVC=false;showLDPE=false;showPP=false;">Reusable Goods</a></td> 
 			    </tr>
 			    <tr>
-			      <td>2</td>
-			      <td><a href="" ng-click="showPaper=true; showReusable=false; showMetals=false; showTextiles=false; showGlass=false;">Paper</a></td>
+			      <td><a href="" ng-click="showPaper=true; showReusable=false; showMetals=false; showTextiles=false; showGlass=false;showPet=false;showHDPE=false;showPVC=false;showLDPE=false;showPP=false;">Paper</a></td>
 			    </tr>
 			    <tr class="info">
-			      <td>3</td>
-			      <td><a href="" ng-click="showMetals=true; showPaper=false; showReusable=false; showTextiles=false; showGlass=false;">Metals</a></td>
+			      <td><a href="" ng-click="showMetals=true; showPaper=false; showReusable=false; showTextiles=false; showGlass=false;showPet=false;showHDPE=false;showPVC=false;showLDPE=false;showPP=false;">Metals</a></td>
 			    </tr>
 			    <tr class="success">
-			      <td>4</td>
-			      <td><a href="" ng-click="showGlass=true; showMetals=false; showPaper=false; showReusable=false; showTextiles=false">Glass</a></td>
+			      <td><a href="" ng-click="showGlass=true; showMetals=false; showPaper=false; showReusable=false; showTextiles=false;showPet=false;showHDPE=false;showPVC=false;showLDPE=false;showPP=false;">Glass</a></td>
 			    </tr>
 			    <tr class="danger">
-			      <td>5</td>
-			      <td><a href="" ng-click="showTextiles=true; showGlass=false; showMetals=false; showPaper=false; showReusable=false">Textiles</a></td>
+			      <td><a href="" ng-click="showTextiles=true; showGlass=false; showMetals=false; showPaper=false; showReusable=false;showPet=false;showHDPE=false;showPVC=false;showLDPE=false;showPP=false;">Textiles</a></td>
 			    </tr>
 			  </tbody>
 			</table> 
@@ -78,23 +73,23 @@
 			  <tbody>
 			    <tr>
 			      <td>1</td>
-			      <td>Column content</td>
+			      <td><a href="" ng-click="showPet=true; showTextiles=false; showGlass=false; showMetals=false; showPaper=false; showReusable=false; showHDPE=false;showPVC=false;showLDPE=false;showPP=false;">PETE</a></td>
 			    </tr>
 			    <tr>
 			      <td>2</td>
-			      <td>Column content</td>
+			      <td><a href="" ng-click="showHDPE=true;showPet=false; showTextiles=false; showGlass=false; showMetals=false; showPaper=false; showReusable=false; showPVC=false;showLDPE=false;showPP=false;">HDPE</a></td>
 			    </tr>
 			    <tr class="info">
 			      <td>3</td>
-			      <td>Column content</td>
+			      <td><a href="" ng-click="showPVC=true; showHDPE=false;showPet=false; showTextiles=false; showGlass=false; showMetals=false; showPaper=false; showReusable=false;showLDPE=false;showPP=false;">V or PVC</a></td>
 			    </tr>
 			    <tr class="success">
 			      <td>4</td>
-			      <td>Column content</td>
+			      <td><a href="" ng-click="showLDPE=true;showPVC=false; showHDPE=false;showPet=false; showTextiles=false; showGlass=false; showMetals=false; showPaper=false; showReusable=false;showPP=false;">LDPE</a></td>
 			    </tr>
 			    <tr class="danger">
 			      <td>5</td>
-			      <td>Column content</td>
+			      <td><a href="" ng-click="showPP=true;showLDPE=false;showPVC=false; showHDPE=false;showPet=false; showTextiles=false; showGlass=false; showMetals=false; showPaper=false; showReusable=false">PP</a></td>
 			    </tr>
 			  </tbody>
 			</table> 
@@ -108,24 +103,13 @@
 		     <table class="table table-striped table-hover ">
 			  <tbody>
 			    <tr>
-			      <td>1</td>
-			      <td>Column content</td>
+			      <td><a href="http://www.republicservices.com/">Republic Services</a></td>
 			    </tr>
 			    <tr>
-			      <td>2</td>
-			      <td>Column content</td>
+			      <td><a href="https://www.wm.com/index.jsp">Waste Management</a></td>
 			    </tr>
 			    <tr class="info">
-			      <td>3</td>
-			      <td>Column content</td>
-			    </tr>
-			    <tr class="success">
-			      <td>4</td>
-			      <td>Column content</td>
-			    </tr>
-			    <tr class="danger">
-			      <td>5</td>
-			      <td>Column content</td>
+			      <td><a href="http://www.deq.state.or.us/lq/ecycle/">E-Recycling</a></td>
 			    </tr>
 			  </tbody>
 			</table> 
@@ -152,6 +136,21 @@
 			</div>
 			<div ng-show="showTextiles">
 				<p>Textiles, including nonreusable clothing; upholstery; and pieces of fabric.</p>
+			</div>
+			<div ng-show="showPet">
+				<p>Picked up by most curbside recycling programs, plastic #1 is usually clear and used to make soda and water bottles. Some consider it safe, but this plastic is known to allow bacteria to accumulate. It’s found mostly in soda bottles, water bottles, beer bottles, salad dressing containers, mouthwash bottles, and peanut butter containers. Plastic #1 is recycled into tote bags, furniture, carpet, paneling, fiber, and polar fleece.</p>
+			</div>
+			<div ng-show="showHDPE">
+				<p>Plastic #2 is typically opaque and picked up by most curbside recycling programs. This plastic is one of the 3 plastics considered to be safe, and has a lower risk of leaching. It’s found mostly in milk jugs, household cleaner containers, juice bottles, shampoo bottles, cereal box liners, detergent bottles, motor oil bottles, yogurt tubs, and butter tubs.ilk jugs, detergent bottles, juice bottles, butter tubs, and toiletries bottles are made of this.  It is usually opaque. This plastic is considered safe and has low risk of leaching. Plastic #2 is recycled into pens, recycling containers, picnic tables, lumber, benches, fencing, and detergent bottles, to name a few.</p>
+			</div>
+			<div ng-show="showPVC">
+				<p>Plastic #3 is used to make food wrap, plumbing pipes, and detergent bottles, and is seldom accepted by curbside recycling programs. These plastics used to, and still may, contain phthalates, which are linked to numerous health issues ranging from developmental problems to miscarriages. They also contain DEHA, which can be carcinogenic with long-term exposure. DEHA has also been linked to loss of bone mass and liver problems. Don’t cook with or burn this plastic. It’s found in shampoo bottles, clear food packaging, cooking oil bottles, medical equipment, piping, and windows. This plastic is recycled into paneling, flooring, speed bumps, decks, and roadway gutters.</p>
+			</div>
+			<div ng-show="showLDPE">
+				<p>Low density polyethylene is most found in squeezable bottles, shopping bags, clothing, carpet, frozen food, bread bags, and some food wraps. Curbside recycling programs haven’t been known to pick up this plastic, but more are starting to accept it. Plastic #4 rests among the recycling symbols considered to be safe. This plastic is recycled into compost bins, paneling, trash can liners and cans, floor tiles, and shipping envelopes.</p>
+			</div>
+			<div ng-show="showPP">
+				<p>Low density polyethylene is most found in squeezable bottles, shopping bags, clothing, carpet, frozen food, bread bags, and some food wraps. Curbside recycling programs haven’t been known to pick up this plastic, but more are starting to accept it. Plastic #4 rests among the recycling symbols considered to be safe. This plastic is recycled into compost bins, paneling, trash can liners and cans, floor tiles, and shipping envelopes.</p>
 			</div>
 		  </div>
 		</div>
