@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="" lang="en-US">
 <head>
+	<title>The Re-Guide: The Recycling Guide</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,23 +47,23 @@
 			  <tbody>
 			    <tr>
 			      <td>1</td>
-			      <td><a href="" ng-click="showReusable=true; showPaper=false">Reusable Goods</a></td> <!--information that will display in the central window-->
+			      <td><a href="" ng-click="showReusable=true; showPaper=false; showMetals=false; showTextiles=false; showGlass=false;">Reusable Goods</a></td> <!--information that will display in the central window-->
 			    </tr>
 			    <tr>
 			      <td>2</td>
-			      <td><a href="" ng-click="showPaper=true; showReusable=false">Paper</a></td>
+			      <td><a href="" ng-click="showPaper=true; showReusable=false; showMetals=false; showTextiles=false; showGlass=false;">Paper</a></td>
 			    </tr>
 			    <tr class="info">
 			      <td>3</td>
-			      <td>Metals</td>
+			      <td><a href="" ng-click="showMetals=true; showPaper=false; showReusable=false; showTextiles=false; showGlass=false;">Metals</a></td>
 			    </tr>
 			    <tr class="success">
 			      <td>4</td>
-			      <td>Glass</td>
+			      <td><a href="" ng-click="showGlass=true; showMetals=false; showPaper=false; showReusable=false; showTextiles=false">Glass</a></td>
 			    </tr>
 			    <tr class="danger">
 			      <td>5</td>
-			      <td>Textiles</td>
+			      <td><a href="" ng-click="showTextiles=true; showGlass=false; showMetals=false; showPaper=false; showReusable=false">Textiles</a></td>
 			    </tr>
 			  </tbody>
 			</table> 
@@ -143,7 +144,15 @@
 			<div ng-show="showPaper">
 			<p>Paper, including newsprint; ledger paper; computer paper; corrugated cardboard; and mixed paper.</p>
 			</div>
-			
+			<div ng-show="showMetals">
+				<p>Metals, both ferrous and nonferrous, including cans; parts from abandoned vehicles; plumbing; fences; metal doors and screens; tools; machinery; and any other discarded metal objects.</p>
+			</div>
+			<div ng-show="showGlass">
+				<p>Glass, including glass containers and window glass.</p>
+			</div>
+			<div ng-show="showTextiles">
+				<p>Textiles, including nonreusable clothing; upholstery; and pieces of fabric.</p>
+			</div>
 		  </div>
 		</div>
 	</div>	
